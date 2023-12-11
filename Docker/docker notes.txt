@@ -28,5 +28,11 @@ dokcer volume:
 --> volume will not be included when we update an image
 --> we can mapped volume in two ways 1) Contaoner <----> Contaner 2) Host <-----> Container
 
+********************************************************************************************************Benefits of Volume in Docker
+********************************************************************************************************-->Decoupling Container from Storage
+--> Share Volume among different Container
+--> Attach Volume to conatainer
+--> On deleting caontainer volume does not deleted
 
+********************************************************************************************************
 			
