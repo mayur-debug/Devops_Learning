@@ -12,3 +12,21 @@ it is possible for docker client to communicate with more than one daemon.
 
 Docker host:
 Docker host is used to provide an environment to execute and run application it contains the docker daemon images containers network and storages.
+
+
+********************************************************************************************************
+dokcer volume:
+********************************************************************************************************
+
+--> Volume is simply a directory inside our container 
+--> Firstly, we have to declare the directory as a volume and then share volume 
+--> Even if we stop container , still we can access volume 
+--> Volume will be created in one container
+--> We need to declare a directory as a volume only while creating container
+--> we cant create volume fro existing container
+--> we can share one volume across any number of container
+--> volume will not be included when we update an image
+--> we can mapped volume in two ways 1) Contaoner <----> Contaner 2) Host <-----> Container
+
+
+			
