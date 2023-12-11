@@ -41,5 +41,25 @@ Benefits of Volume in Docker
 --> On deleting caontainer volume does not deleted
 
 ********************************************************************************************************
+Steps to create Volunme in Docker:
+********************************************************************************************************
+--> Create volume from Docker file :Create DockerFile and write given code in Dockerfile
+    # vim Dockerfile
 
-			
+FROM ubuntu
+VOLUME ["/myvolume"]
+
+now save these file
+
+--> Then Create Image from Above Dockerfile 
+     # docker build -t ubuntu . (ubuntu is the image new)
+
+--> Now Create container from above image and run it 
+     # docker run -it --name mayur ubuntu /bin/bash (mayur::container name , ubuntu::image)
+
+--> we will get myvolume in root dir
+     # ls
+
+-->NOW share the myvolume with another container (container <---> container)
+     # docker run -it --name pawar --privileged-true --volumes-from mayur ubantu /bin/bash
+
