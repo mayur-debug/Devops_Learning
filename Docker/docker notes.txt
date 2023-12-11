@@ -1,17 +1,21 @@
+********************************************************************************************************
 Components of docker:
-
+********************************************************************************************************
 
 Docker daimon :
-IT is responsible for runs on the host OS , it is responsible for running containers to, manages docker services, docker daemoncan communicate with other daemon
+IT is responsible for runs on the host OS , it is responsible for running containers to, manages docker
+services, docker daemoncan communicate with other daemon
 
 Docker client: 
 Docker user can interact with docker through a client 
 docker client uses commands and rest api to communicate with the docker daemon 
-when a client runs any server command on the docker client terminal, the client terminal sends these docker command to the docker daemon 
+when a client runs any server command on the docker client terminal, the client terminal sends these 
+docker command to the docker daemon 
 it is possible for docker client to communicate with more than one daemon.
 
 Docker host:
-Docker host is used to provide an environment to execute and run application it contains the docker daemon images containers network and storages.
+Docker host is used to provide an environment to execute and run application it contains the docker 
+daemon images containers network and storages.
 
 
 ********************************************************************************************************
@@ -28,13 +32,14 @@ dokcer volume:
 --> volume will not be included when we update an image
 --> we can mapped volume in two ways 1) Contaoner <----> Contaner 2) Host <-----> Container
 
-*******************************************************************************************************
+********************************************************************************************************
 Benefits of Volume in Docker
-*******************************************************************************************************
+********************************************************************************************************
 -->Decoupling Container from Storage
 --> Share Volume among different Container
 --> Attach Volume to conatainer
 --> On deleting caontainer volume does not deleted
 
 ********************************************************************************************************
+
 			
