@@ -1,5 +1,7 @@
-*******************************************************************************************************Docker:
-*******************************************************************************************************--> Docker is an Open Source Centralized platform designed to create, deploy and run application 
+*******************************************************************************************************
+Docker:
+*******************************************************************************************************
+--> Docker is an Open Source Centralized platform designed to create, deploy and run application 
 --> Docker uses containers on the host OS to run appliations it allow applications to use the same 
 linux kernel as a system on the host computer, rather than creating a whole virtual OS.
 --> we can install docker on any os Docker engine runs motively on linux distribution 
