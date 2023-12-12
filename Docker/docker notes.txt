@@ -1,7 +1,41 @@
-********************************************************************************************************
-Components of docker:
-********************************************************************************************************
+*******************************************************************************************************Docker:
+*******************************************************************************************************--> Docker is an Open Source Centralized platform designed to create, deploy and run application 
+--> Docker uses containers on the host OS to run appliations it allow applications to use the same 
+linux kernel as a system on the host computer, rather than creating a whole virtual OS.
+--> we can install docker on any os Docker engine runs motively on linux distribution 
+--> Docker is written in "go" language.
+--> Docker is a tool that perform OS level virtualization, also known as containerization.
+--> Docker was first release in march 2013, it is developed by soloman hykes and sebastian patil.
+--> Docker is a set pf platform as a service that uses OS level virtualization whenever VMware uses
+hardware level virtualization.
 
+
+*******************************************************************************************************
+Advantages of Docker:
+*******************************************************************************************************
+--> No pre-allocation of Ram.
+--> CI Efficiency, Docker enables us to build a container images and use that same images across every step of the deployment process.
+--> less cost.
+--> it is lite weight 
+--> it can run on physical h/w , virtual h/w or on cloud.
+--> it took very less time to create container.
+
+
+*******************************************************************************************************
+Disadvantages of Docker:
+*******************************************************************************************************
+--> Docker is not a good solution for application that require rich GUI.
+--> Difficult to manage large amount of container .
+--> Docker does not provide cross-platform compatibility means, if an application designed to run in a
+dokcer. if we create Container on window, then we cant run these on linux or vice-verca.
+--> Docker is suitable when the development OS and testing OS are same, if the OS is different we need
+to use VM.
+--> No solution for data recovery and backup.
+
+
+*******************************************************************************************************
+Components of docker:
+*******************************************************************************************************
 Docker daimon :
 IT is responsible for runs on the host OS , it is responsible for running containers to, manages docker
 services, docker daemoncan communicate with other daemon
@@ -61,5 +95,5 @@ now save these file
      # ls
 
 -->NOW share the myvolume with another container (container <---> container)
-     # docker run -it --name pawar --privileged-true --volumes-from mayur ubantu /bin/bash
+     # docker run -it --name pawar --privileged-true --volumes-from mayur ubuntu /bin/bash
 
