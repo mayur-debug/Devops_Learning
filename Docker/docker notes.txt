@@ -16,7 +16,8 @@ hardware level virtualization.
 Advantages of Docker:
 *******************************************************************************************************
 --> No pre-allocation of Ram.
---> CI Efficiency, Docker enables us to build a container images and use that same images across every step of the deployment process.
+--> CI Efficiency, Docker enables us to build a container images and use that same images across every
+step of the deployment process.
 --> less cost.
 --> it is lite weight 
 --> it can run on physical h/w , virtual h/w or on cloud.
