@@ -54,6 +54,31 @@ Docker host:
 Docker host is used to provide an environment to execute and run application it contains the docker 
 daemon images containers network and storages.
 
+********************************************************************************************************
+Docker Hub and Registry
+********************************************************************************************************
+--> there are two types of registry in the docker.
+    1) Public Registry: Public registry is also called as docker hub.
+    2) Private Registry: It is used to share inages within the enterprise or Organization.
+
+********************************************************************************************************
+Docker Images: 
+********************************************************************************************************
+-->Docker images are the read only binary template used to create binary template used to create docker
+container.( Single file with all dependencies and Configuration required to run a program)
+
+ways to create an Images.
+1) Take images from dokcer hub.
+2) Create images from dokcer file.
+3) create images from existing dokcer container.
+
+********************************************************************************************************
+Docker Container:
+********************************************************************************************************
+--> Container hold the entire package that is needed to run the application, In other word, we can say 
+that the image is a template and the container is a template and the container is a copy of that template.
+--> Container is like a virtual Machine.
+--> Images becomes Container when these run on dokcer engine.
 
 ********************************************************************************************************
 dokcer volume:
@@ -62,9 +87,9 @@ dokcer volume:
 --> Volume is simply a directory inside our container 
 --> Firstly, we have to declare the directory as a volume and then share volume 
 --> Even if we stop container , still we can access volume 
---> Volume will be created in one container
+)--> Volume will be created in one container
 --> We need to declare a directory as a volume only while creating container
---> we cant create volume fro existing container
+--> we cant create volume from existing container
 --> we can share one volume across any number of container
 --> volume will not be included when we update an image
 --> we can mapped volume in two ways 1) Contaoner <----> Contaner 2) Host <-----> Container
