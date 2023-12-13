@@ -81,13 +81,39 @@ that the image is a template and the container is a template and the container i
 --> Images becomes Container when these run on dokcer engine.
 
 ********************************************************************************************************
+Basic Components of Docker 
+********************************************************************************************************
+--> To see all images presents in our local machine .
+    # docker images
+--> To find out images in dokcer hub.
+    # docker search ubuntu (ubuntu::image name)
+--> To download images from dockerhub to local machine
+    # docker pull jenkins
+--> to run and give name to a container.
+    # docker run -itd --name mayur ubuntu /bin/bash (mayur::new name of container , ubantu::images 
+pulled from dokcer hub, i::interactive mode, t::terminal, d ::used to exit from container without
+shutdown)
+-->  To start container 
+    # docker start mayur 
+--> To go inside container
+    # docker attach mayur
+--> To see all container 
+    # docker ps -a (start and stoped)
+    # dokcer ps    (running container)
+--> To stop container 
+    # docker stop mayur
+--> To delete container
+    # docker rm mayur (we can't delete running container, we need to stop that before deleting).
+
+
+********************************************************************************************************
 dokcer volume:
 ********************************************************************************************************
 
 --> Volume is simply a directory inside our container 
 --> Firstly, we have to declare the directory as a volume and then share volume 
---> Even if we stop container , still we can access volume 
-)--> Volume will be created in one container
+--> Even if we stop container , still we can access volume
+--> Volume will be created in one container
 --> We need to declare a directory as a volume only while creating container
 --> we cant create volume from existing container
 --> we can share one volume across any number of container
