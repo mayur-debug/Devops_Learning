@@ -123,7 +123,7 @@ dokcer volume:
 ********************************************************************************************************
 Benefits of Volume in Docker
 ********************************************************************************************************
--->Decoupling Container from Storage
+--> Decoupling Container from Storage
 --> Share Volume among different Container
 --> Attach Volume to conatainer
 --> On deleting caontainer volume does not deleted
@@ -150,4 +150,6 @@ now save these file
 
 -->NOW share the myvolume with another container (container <---> container)
      # docker run -it --name pawar --privileged-true --volumes-from mayur ubuntu /bin/bash
+
+******************************************************************************************************
 
